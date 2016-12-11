@@ -37,6 +37,7 @@ public class LoginActivity extends AppCompatActivity
         // Registering signIn buttons OnClickListener to sign in.
         findViewById(R.id.sign_in_button).setOnClickListener(this);
         findViewById(R.id.sign_out_button).setOnClickListener(this);
+        findViewById(R.id.continueAs_button).setOnClickListener(this);
 
         // Configure sign-in to request the user's ID, email address, and basic profile.
         // ID and basic provile are included in DEFAULT_SIGN_IN
@@ -100,6 +101,8 @@ public class LoginActivity extends AppCompatActivity
     private void bringToHomepage()
     {
         //load new activity for video search
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
     }
 
     @Override
@@ -127,7 +130,7 @@ public class LoginActivity extends AppCompatActivity
             case R.id.sign_out_button:
                 signOut();
                 break;
-            case R.id.continueAs:
+            case R.id.continueAs_button:
                 bringToHomepage();
                 break;
         }

@@ -64,7 +64,7 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/continueAs"
+                android:id="@+id/continueAs_button"
                 android:text="Continue"
                 android:background="@android:color/holo_red_dark"/>
         </LinearLayout>
